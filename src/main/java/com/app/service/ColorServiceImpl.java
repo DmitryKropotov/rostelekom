@@ -3,16 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package service;
+package com.app.service;
 
 import java.util.List;
-import model.Color;
-import repository.ColorRepository;
+import com.app.model.Color;
+import com.app.repository.ColorRepository;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author mitya
  */
+@Service
 public class ColorServiceImpl implements ColorService {
     
     private ColorRepository colorRepository;

@@ -3,14 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package model;
+package com.app.repository;
+
+import java.util.List;
+import com.app.model.Color;
 
 /**
  *
  * @author mitya
  */
-public class Color {
-    int id;
-    String colorNumber;
-    String name;
+public interface ColorRepository {
+    List<Color> findAllColors();
 }

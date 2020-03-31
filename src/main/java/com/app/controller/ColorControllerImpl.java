@@ -3,23 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package repository;
+package com.app.controller;
 
 import java.util.List;
-import model.Color;
-import service.ColorService;
+import com.app.model.Color;
+import com.app.service.ColorService;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  *
  * @author mitya
  */
-public class ColorRepositoryImpl implements ColorRepository {
+@RestController
+public class ColorControllerImpl implements ColorController {
     
-    private ColorService colorService;
+    ColorService colorService;
 
     @Override
     public List<Color> findAllColors() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       return colorService.findAllColors();
     }
     
 }

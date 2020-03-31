@@ -3,15 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package controller;
+package com.app.model;
 
-import java.util.List;
-import model.Color;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
 /**
  *
  * @author mitya
  */
-public interface ColorController {
-        List<Color> findAllColors();
+@Data
+@AllArgsConstructor
+public class Color {
+    int id;
+    String colorNumber;
+    String name;
 }
